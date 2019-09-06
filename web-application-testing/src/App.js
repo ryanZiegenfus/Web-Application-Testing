@@ -3,6 +3,10 @@ import './App.css';
 import Display from "./Display";
 import Dashboard from "./Dashboard";
 
+export const addPoint = currentPoint => {
+  return currentPoint + 1
+}
+
 function App() {
   const [ballsState, setBallsState] =useState(0)
   const [strikesState, setStrikesState] = useState(0)
@@ -13,7 +17,7 @@ function App() {
       setStrikesState(0);
     }
     else{
-      setBallsState(ballsState + 1)
+      setBallsState(addPoint(ballsState))
     }
   }
 
@@ -23,13 +27,13 @@ function App() {
       setStrikesState(0);
     }
     else{
-      setStrikesState(strikesState + 1)
+      setStrikesState(addPoint(strikesState))
     }
   }
 
   const foulChange = () => {
     if (strikesState < 2){
-      setStrikesState(strikesState + 1)
+      setStrikesState(addPoint(strikesState))
     }
 }
 
