@@ -8,17 +8,40 @@ function App() {
   const [strikesState, setStrikesState] = useState(0)
 
   const ballChange = () => {
+    if (ballsState === 3){
+      setBallsState(0);
+      setStrikesState(0);
+    }
+    else{
       setBallsState(ballsState + 1)
+    }
   }
 
   const strikeChange = () => {
+    if (strikesState === 2){
+      setBallsState(0);
+      setStrikesState(0);
+    }
+    else{
       setStrikesState(strikesState + 1)
+    }
   }
+
+  const foulChange = () => {
+    if (strikesState < 2){
+      setStrikesState(strikesState + 1)
+    }
+}
+
+const hitChange = () => {
+  setBallsState(0)
+  setStrikesState(0)
+}
 
   return (
     <div className="App">
       <Display balls={ballsState} strikes={strikesState}/>
-      <Dashboard ballschange={ballChange} strikechange={strikeChange}/>
+      <Dashboard ballchange={ballChange} strikechange={strikeChange} foulchange={foulChange} hitchange={hitChange}/>
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 
-export default function FoulButton() {
+export default function FoulButton(props) {
 
     return(
-        <div>
+        <div onClick={() => props.foulchange()}>
             Foul
         </div>
     )

@@ -11,9 +11,9 @@ export default function Dashboard(props) {
     return(
         <div className="dashboard">
             <StrikeButton strikechange={props.strikechange} />
-            <BallButton />
-            <FoulButton />
-            <HitButton />
+            <BallButton ballchange={props.ballchange}/>
+            <FoulButton foulchange={props.foulchange}/>
+            <HitButton hitchange={props.hitchange}/>
         </div>
     )
 }

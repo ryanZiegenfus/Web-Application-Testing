@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 
-export default function BallButton() {
+export default function BallButton(props) {
 
     return(
-        <div>
+        <div onClick={() => props.ballchange()}>
             Ball
         </div>
     )

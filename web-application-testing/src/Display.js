@@ -9,6 +9,7 @@ export default function Display(props) {
                 <div>{props.balls}</div>
                 <div>balls</div>
             </div>
+            <div className="play-ball">Play Ball!</div>
             <div className="display-items">
                 <div>{props.strikes}</div>
                 <div>strikes</div>

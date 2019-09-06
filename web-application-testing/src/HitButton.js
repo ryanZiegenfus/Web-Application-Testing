@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 
-export default function HitButton() {
+export default function HitButton(props) {
 
     return(
-        <div>
+        <div onClick={() => props.hitchange()}>
             Hit
         </div>
     )
