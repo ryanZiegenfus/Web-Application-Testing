@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  background: #03733C;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.display-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: black;
+  color: 
+}
+
+.display {
+  width: 60%;
+  height: 30vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.display-items{
+  height: 70%;
+  width: 15%;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #EC1C25;
+  border: 2px solid white;
+}
+
+.display-items div:first-child {
+  font-size: 200%;
+}
+
+.dashboard {
+  width: 60%;
+  margin: 10px auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dashboard div {
+  border: 2px solid white;
+  width: 75px;
+  border-radius: 20px;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.play-ball {
+  margin-bottom: 60px;
+  color: white;
+  font-weight: 900;
+  font-size: 175%;
+}
